@@ -1,13 +1,195 @@
+/* General Styles */
 body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f5f5f5;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.App {
+  text-align: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+/* Navigation Styles */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  background-color: #333;
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+
+nav li {
+  margin: 0 10px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+  padding: 15px 20px;
+  display: block;
+  border-radius: 4px;
+}
+
+nav a:hover {
+  background-color: #555;
+}
+
+/* Heading Styles */
+h1 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+/* Form Styles */
+input, textarea, button {
+  display: block;
+  margin: 10px auto;
+  width: 80%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+input:focus, textarea:focus {
+  border-color: #007BFF;
+}
+
+button {
+  width: auto;
+  padding: 10px 20px;
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* List Styles */
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin: 20px 0;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #fafafa;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+li h3 {
+  margin: 0 0 10px;
+  color: #007BFF;
+}
+
+li p {
+  margin: 0 0 10px;
+  color: #666;
+}
+
+li a {
+  color: #007BFF;
+  text-decoration: none;
+}
+
+li a:hover {
+  text-decoration: underline;
+}
+
+button.delete {
+  background-color: #ff4d4d;
+  color: #fff;
+}
+
+button.delete:hover {
+  background-color: #e60000;
+}
+
+/* About Us Page Styles */
+.about-us .persons, .about-us .services {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.about-us .person, .about-us .service {
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  width: 250px;
+  text-align: left;
+  background-color: #fff;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.about-us .person img, .about-us .service img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+.about-us .person h3, .about-us .service h3 {
+  margin: 10px 0;
+  color: #007BFF;
+}
+
+/* Home Page Styles */
+.home-images {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.home-image-container {
+  width: 45%;
+  text-align: center;
+}
+
+.home-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.home-description {
+  background-color: #fafafa;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.notification-link {
+  display: block;
+  margin-top: 20px;
+  text-align: center;
+  text-decoration: none;
+  color: #007BFF;
+}
+
+.notification-link:hover {
+  text-decoration: underline;
 }

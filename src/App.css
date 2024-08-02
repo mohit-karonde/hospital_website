@@ -2,37 +2,91 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+nav ul {
+  list-style-type: none;
+  padding: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+nav li {
+  display: inline;
+  margin: 0 10px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+nav a {
+  text-decoration: none;
+  color: #000;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+input, textarea, button {
+  display: block;
+  margin: 10px auto;
+}
+
+input, textarea {
+  width: 80%;
+  padding: 10px;
+}
+
+button {
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin: 20px 0;
+  padding: 20px;
+  border: 1px solid #ccc;
+}
+
+li h3 {
+  margin: 0 0 10px;
+}
+
+li p {
+  margin: 0 0 10px;
+}
+
+li a {
+  color: #007BFF;
+  text-decoration: none;
+}
+
+li a:hover {
+  text-decoration: underline;
+}
+
+.about-us .persons, .about-us .services {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-wrap: wrap;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.about-us .person, .about-us .service {
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  width: 250px;
+  text-align: left;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.about-us .person img, .about-us .service img {
+  width: 100%;
+  height: auto;
+}
+
+.about-us .person h3, .about-us .service h3 {
+  margin: 10px 0;
 }
